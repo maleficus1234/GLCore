@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCE5D762-4816-46F4-8E80-97CFEC8A7302}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gharen.GLCore</RootNamespace>
+    <AssemblyName>Gharen.GLCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context.cs" />
+    <Compile Include="DisplayMode.cs" />
+    <Compile Include="GL30.cs" />
+    <Compile Include="GL30_10.cs" />
+    <Compile Include="GL30_12.cs" />
+    <Compile Include="GL30_13.cs" />
+    <Compile Include="GL30_14.cs" />
+    <Compile Include="GL30_15.cs" />
+    <Compile Include="GL30_20.cs" />
+    <Compile Include="GL30_21.cs" />
+    <Compile Include="GL31.cs" />
+    <Compile Include="GL32.cs" />
+    <Compile Include="GL33.cs" />
+    <Compile Include="GL40.cs" />
+    <Compile Include="GL41.cs" />
+    <Compile Include="GL42.cs" />
+    <Compile Include="GL43.cs" />
+    <Compile Include="GLContext.cs" />
+    <Compile Include="GLES20.cs" />
+    <Compile Include="GLES30.cs" />
+    <Compile Include="InitialisationFailedException.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="GL30_11.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GLBase.cs" />
+    <Compile Include="Vector2.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vector4.cs" />
+    <Compile Include="Win32\wgl.cs" />
+    <Compile Include="Win32\Win32.cs" />
+    <Compile Include="Win32\Win32Context.cs" />
+    <Compile Include="Win32\Win32Enums.cs" />
+    <Compile Include="Win32\Win32Platform.cs" />
+    <Compile Include="Win32\Win32Window.cs" />
+    <Compile Include="Window.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
